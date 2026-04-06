@@ -1,0 +1,17 @@
+
+# Core scientific stack
+numpy>=1.24
+scipy>=1.10
+
+# Structural biology
+biopython>=1.81
+freesasa>=2.1.0
+
+# Machine learning
+scikit-learn>=1.3
+joblib>=1.2.0
+
+# ─────────────────────────────────────────────────────────
+# NOTE: DSSP and MSMS are external binaries, not pip packages.
+# See the Installation section in README.md for instructions.
+# ─────────────────────────────────────────────────────────

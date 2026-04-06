@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ginyfind"
+version = "1.0.0"
+description = "ML-based ligand binding site predictor for proteins"
+readme = "README.txt"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "biopython>=1.81",
+    "freesasa>=2.1.0",
+    "scikit-learn>=1.3",
+    "joblib>=1.2.0",
+    "pandas>=1.5",
+]
+
+[project.scripts]
+ginyfind_predict = "model.predict:main"
+ginyfind_train = "model.train:main"
+ginyfind_evaluate = "model.evaluate:main"
+
+[tool.setuptools.packages.find]
+include = ["features*", "model*", "data*", "output*", "scripts*"]
+
+[tool.setuptools]
+py-modules = ["main"]
