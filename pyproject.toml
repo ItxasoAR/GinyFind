@@ -22,6 +22,8 @@ dependencies = [
 ginyfind_predict = "model.predict:main"
 ginyfind_train = "model.train:main"
 ginyfind_evaluate = "model.evaluate:main"
+ginyfind_build = "data.build_dataset:main"
+
 
 [tool.setuptools.packages.find]
 include = ["features*", "model*", "data*", "output*", "scripts*"]
